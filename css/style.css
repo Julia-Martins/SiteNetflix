@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    background-color: #181414;
+}
+
+h1, h2, h3, h4, p {
+    color: white;
+}
+
+#search{
+    color: azure;
+}
+
+.emphasis{
+    position: relative;
+    height: 80%;
+}
+
+.imgPricipal{
+    z-index: 0;
+    width: 100%;
+}
+
+.imgTitlePricipal{
+    width: 30%;
+}
+
+.watchPricipal{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.synopsisPricipal{
+    width: 50%;
+}
+
+.imgTitlePricipal, .watchPricipal, .synopsisPricipal{
+    position: relative;
+    bottom: 700px;
+    left: 5%;
+}
+
+.btnPlay, .btnInformation{
+    position: relative;
+    bottom: 700px;
+    left: 4%;
+}
+
+/* Btn Play */
+
+.btnPlay{
+    margin: 0px 14px 0px 14px;
+    padding: 11px 34px 20px 28px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #FFFFFF;
+    color: #000000;
+    align-items: center;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+}
+
+.btnPlay:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Finish BtnPlay */
+
+.txtAssistir, .txtMaisInformacoes{
+    margin-left: 10px;
+}
+
+/* Btn Information */
+
+.btnInformation{
+    margin: 0px 14px 0px 14px;
+    padding: 11px 34px 11px 28px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #FFFFFF;
+    align-items: center;
+    cursor: pointer;
+
+    left: 3%;
+}
+
+#btnInformationId{
+    background: rgb(109, 109, 109, 0.6);
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+#btnInformationId:hover{
+    background: rgba(109, 109, 109, 0.3);
+    border-radius: 4px;
+}
+
+/* Finish Btn Information */
+
+/* Btn Return */
+
+.btnReturn{
+    position: relative;
+    bottom: 760px;
+    left: 90%;
+
+    width: 10%;
+}
+
+.imgReturn{
+    display: block;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    color: white;
+}
+
+#slash{
+    position: relative;
+    background: rgb(51, 51, 51, 0.6);
+    padding: 10px 64px 15px 15px;
+    border-left: 3px solid rgb(255, 255, 255, 0.8);
+    left: 35%;
+    bottom: 43px;
+}
+
+.classification{
+    width: 22%;
+}
+
+
+/* Carroussel MyList */
+
+#myListId{
+    position: relative;
+    left: 5%;
+}
+
+.carousel-inner{
+    display: flex;
+}
+
+.carousel-item{
+    display: block;
+    margin-right: 10px;
+    flex: 0 0 calc(100%/6);
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+}
+
+.imgCarouselList{
+    width: 100%;
+    height: 100%;
+}
