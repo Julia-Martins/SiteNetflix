@@ -15,6 +15,7 @@
 .navbar{
     padding: 9px;
     background-color: transparent;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 .navbar-scrolled
@@ -25,7 +26,11 @@
 /* textos das nav */
 .nav-link{
     font-size: 14px;
-    color: white;
+    color: rgb(229, 229, 229);
+}
+
+.nav-link:hover{
+    color: rgba(229, 229, 229, 0.8);
 }
 
 /* fonte do "Início" */
@@ -82,22 +87,18 @@
 
 
 .search-icon {
-    background:rgb(46, 45, 45, 0.0);
-    position: relative;
-    font-size: 5px;
-    line-height: 50px;
-    padding: 1%;
-    text-align: center;
-    color: var(--white);
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    z-index: 2;
-    transition: background-color 0.2s;
 
-}
-#searchLupa{
-    width: 10%;
+  position: relative;
+  font-size: 5px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.2s;
+
 }
 #lupinha
 {
@@ -129,6 +130,7 @@
   opacity: 0;
   transition: opacity 0.4s;
   text-align: center;
+
 }
 
 .active.search-input::placeholder {
@@ -144,7 +146,7 @@
   padding: 1rem;
   color: #fff;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .fa-regular
@@ -155,3 +157,4 @@
     color: transparent;
 
 }
+
