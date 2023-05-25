@@ -1,0 +1,157 @@
+
+/* o gif futuro da api que fica na tela inicial */
+.bg-image
+{
+    width: 99vw;
+    height: 99vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+/* A nav bar */
+.navbar{
+    padding: 9px;
+    background-color: transparent;
+}
+
+.navbar-scrolled
+{
+    background-image: linear-gradient(to bottom, #000000, #1e1e1e);
+}
+
+/* textos das nav */
+.nav-link{
+    font-size: 14px;
+    color: white;
+}
+
+/* fonte do "Início" */
+#inicio
+{
+    font-weight: bold;
+}
+/* NETFLIX logo */
+.navbar-brand
+{
+    width: 110px;
+    margin-left: 30px;
+    margin-right: 33px;
+}
+/* Ícone da conta */
+#iconAcc
+{
+    width: 38px;
+    height: 30px;
+    padding-left: 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/* setinha do lado do Ícone da conta*/
+.setinha
+{
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    margin:19px 36px 16px 7px;
+}
+/* sino do lado da foto de perfil */
+.Hawkins-Icon
+{
+    color: #fff;
+    margin-left: 10px;
+
+    z-index: 10;
+}
+
+
+/* ---------------------------------------- */
+/* Lupa e o e toda a search daqui pra baixo */
+/* ---------------------------------------- */
+#lupa
+{
+    position: relative;
+    width: 35px;
+    height: 40px;
+    bottom: 5px;
+    right: -16px;
+}
+
+
+.search-icon {
+    background:rgb(46, 45, 45, 0.0);
+    position: relative;
+    font-size: 5px;
+    line-height: 50px;
+    padding: 1%;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.2s;
+
+}
+#searchLupa{
+    width: 10%;
+}
+#lupinha
+{
+    position: relative;
+    font-size: 1px;
+    z-index: 9;
+    left: 35px;
+    bottom: -8px;
+
+}
+.search-input {
+  position: relative;
+  right: 15px;
+  border: #fff;
+  border-style: solid;
+  border-radius: 0px;
+
+  font-size: 1.1rem;
+  color: rgb(46, 45, 45);
+  width: 10px;
+  height: 12px;
+  flex: 1;
+  border-width: 1px;
+  transition: width 0.6s, padding 0.5s;
+  background-color: #000000;
+}
+
+.search-input::placeholder {
+  opacity: 0;
+  transition: opacity 0.4s;
+  text-align: center;
+}
+
+.active.search-input::placeholder {
+  font-size: 1.1rem;
+  opacity: 1;
+
+}
+
+.search-input.active {
+  margin-top: 7px;
+
+  width: 300px;
+  padding: 1rem;
+  color: #fff;
+  position: relative;
+  text-align: left;
+}
+
+.fa-regular
+{
+    font-size: 35px;
+    float: left;
+    position: relative;
+    color: transparent;
+
+}
