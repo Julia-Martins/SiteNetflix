@@ -81,10 +81,9 @@
     position: relative;
     width: 35px;
     height: 40px;
-    bottom: 5px;
+    bottom: 12px;
     right: -16px;
 }
-
 
 .search-icon {
 
@@ -131,6 +130,11 @@
   transition: opacity 0.4s;
   text-align: center;
 
+}
+
+.search-input
+{
+    opacity: 0;
 }
 
 .active.search-input::placeholder {

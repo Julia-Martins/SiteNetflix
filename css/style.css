@@ -1,6 +1,5 @@
 body, html{
     margin: 0;
-    width: 100%;
     background-color: #181414;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
@@ -19,7 +18,7 @@ h1, h2, h3, h4, p {
 }
 
 .imgPricipal{
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     opacity: 0.8;
 }
@@ -114,17 +113,15 @@ h1, h2, h3, h4, p {
     width: 10%;
 }
 
-.imgReturn{
-    display: block;
-    margin: 0;
-    
+.imgReturn{    
     position: relative;
     align-items: center;
     justify-content: center;
+    right: 20%;
 
     width: 50px;
     height: 50px;
-    
+        
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -136,7 +133,7 @@ h1, h2, h3, h4, p {
     background: rgb(51, 51, 51, 0.6);
     padding: 10px 64px 15px 15px;
     border-left: 3px solid rgb(255, 255, 255, 0.8);
-    left: 35%;
+    left: 20%;
     bottom: 43px;
 }
 
@@ -189,6 +186,142 @@ h1, h2, h3, h4, p {
     top: 42px;
 }
 
+/* .img-wrapper {
+    transition: transform 100ms ease-out, border-radius 200ms ease-out;
+  }
+  
+  .img-wrapper .imgCarouselList {
+    width: 100%;
+    background-size: cover!important;
+    background-position: center!important;
+  }
+  
+  .img-wrapper .text {
+    display: none;
+    background: #181818;
+    color: #fff;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: opacity 300ms ease-out, border-radius 200ms ease-out;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .img-wrapper:hover {
+    border-radius: 10px;
+    transform: scale(1.5);
+    box-shadow: 0 0 2px #000a;
+  }
+  
+  .img-wrapper:hover .text {
+    display: block;
+  }
+
+  .img-wrapper .imgCarouselList {
+    background: url(../imagens/cyberpunk2077.jpg);
+  }
+  
+  .img-wrapper:hover .imgCarouselList {
+    background: url(https://media.giphy.com/media/lgcUUCXgC8mEo/giphy.gif), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
+  } */
+
+  /* Card Informations */
+
+/* .card {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-shadow: 0 1px 1px rgba(20, 20, 20, 0.6);
+    opacity: 0;
+}
+
+.card .tittleSeries {
+    display: block;
+    width: 100%;
+    font-size: 0.7vw;
+    font-weight: 600;
+    margin-bottom: 0.3vw;
+}
+
+.card .info {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.3vw;
+    font-size: 0;
+}
+
+.card .info {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.3vw;
+    font-size: 0;
+}
+
+.card .info .match {
+    display: inline-block;
+    width: auto;
+    font-size: 0.5vw;
+    font-weight: 600;
+    margin-right: 0.4vw;
+    color: #46d369;
+}
+
+.card .info .age {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    font-size: 0.5vw;
+    padding: 0 0.4em;
+    margin-right: 0.4vw;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+.card .info .dur {
+    display: inline-block;
+    width: auto;
+    font-size: 0.5vw;
+}
+
+.card .tags {
+    display: block;
+    width: 100%;
+  }
+.card .tags .genres {
+    display: inline-block;
+    width: auto;
+    font-size: 0.5vw;
+    margin: 0 0.3vw 0 0;
+}
+.card .tags .genres:after {
+    content: "●";
+    display: inline-block;
+    margin: 0 0 0 0.3vw;
+    font-size: 0.8 xvw;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.4);
+}
+.card .tags .genres:last-child:after {
+    display: none;
+} */
+
+/* .imgCarouselList:after {
+    opacity: 1;
+}
+.imgCarouselList {
+    opacity: 1;
+}
+.card {
+    opacity: 1;
+} */
+
+/* Card Informations */
+
 /* Finish Carousel General */
 
 /* Carroussel MyList */
@@ -240,47 +373,3 @@ h1, h2, h3, h4, p {
 }
 
 /* Finish Carousel inBrazilTop10 */
-
-/* .square {
-    width: 150px;
-    height: 100px;
-    transition: transform 100ms ease-out, border-radius 200ms ease-out;
-  }
-  
-  .square .cover {
-    width: 100%;
-    height: 100px;
-    border-radius: 10px 10px 0 0;
-    background-size: cover!important;
-    background-position: center!important;
-  }
-  
-  .square .text {
-    display: none;
-    background: #181818;
-    color: #fff;
-    width: 100%;
-    height: fit-content;
-    padding: 5px;
-    box-sizing: border-box;
-    transition: opacity 300ms ease-out, border-radius 200ms ease-out;
-    border-radius: 0 0 10px 10px;
-  }
-  
-  .square:hover {
-    border-radius: 10px;
-    transform: scale(1.5);
-    box-shadow: 0 0 2px #000a;
-  }
-  
-  .square:hover .text {
-    display: block;
-  }
-  
-  .square.one .cover {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), #181818;
-  }
-  
-  .square.one:hover .cover {
-    background: url(https://media.giphy.com/media/lgcUUCXgC8mEo/giphy.gif), url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg), skyblue;
-  } */
