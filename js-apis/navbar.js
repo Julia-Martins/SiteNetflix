@@ -57,3 +57,7 @@ clearIcon.onclick = function () {
     input.classList.remove("active"); //set search bar to default size
     clearIcon.classList.remove("active"); //hide clear icon
 };
+
+searchIcon.addEventListener("click", function() {
+    input.style.opacity = "1";
+});
